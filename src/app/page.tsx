@@ -1,8 +1,7 @@
 // pages/index.js
-import axios from 'axios';
-import styles from "./page.module.css";
 
-import Image from "next/image";
+import styles from "./page.module.css";
+;
 
 async function getData() {
   const res = await fetch("http://localhost:3000/api/getData", { cache: 'no-store' });
