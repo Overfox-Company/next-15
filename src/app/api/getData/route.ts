@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-export async function GET(req: Request) {
+export async function GET() {
     try {
         return new Response(JSON.stringify({ message: 'Api funcionando', id: uuidv4() }))
     } catch (error) {
