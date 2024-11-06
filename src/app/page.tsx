@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 ;
 
 async function getData() {
-  const res = await fetch("http://localhost:3000/api/getData", { cache: 'no-store' });
+  const res = await fetch("https://next-15-phi.vercel.app/api/getData", { cache: 'no-store' });
   if (!res.ok) throw new Error("Failed to fetch data");
   const data = await res.json();
   return data;
